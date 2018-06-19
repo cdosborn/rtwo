@@ -1,13 +1,14 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 dist: trusty
-script: 
-  - python setup.py install 
+script:
+- python setup.py install
 deploy:
   provider: pypi
   user: atmosphere
+  server: https://testpypi.python.org/pypi
   password:
-    secure: RpKQdpwtHPtS2NBE1J/VkwA98I1GPWCXAbsviScYuaDvqDmGsbMRvo4yp4/luza3iSJJVw+HR+GjmN2S0F++k9nHRLoBGjyLs0FWSUw0P0wsVq2A9+hpgLbxygBoLD5Q7RhxqVHoIabmalgIN7qBUU4wMG/PULRNGGxKkorghdU=
+    secure: UrH15byMX2eX3fN9ksT771i1lufch6HsyCjk3b+87E0Cua7tzMSrLSqnPPovsmmuaugX3BjLO2rc7eeNJ8Gz7oeR60ebxBPh4Ya/JxP5fW4iEB2k8WKstHGcCbH2F9HZgLydVNTunePOXqyM9kz5yEC8OIKf07RH94kCH71gWCFg0gshiOgVcbPijK5G7PiNMA5pTkHghjPcP86iD9B79lDmvr6gE7OwPj0dGKStiAOS16Pvn6Mqp22WPCmZl5ona6xN8mYxA3BxE8Qi/J25kv1nRUQuILc29TmERJBFmtoxWat3vHMFJj6Yis37n4vCpfd+Vqctjjb+mPdMJcoy5nZ/bGNNkxi76fU1yEmYmTbE1wToHLPIaU/XPnBvn0be+F7J+iTZfWuhbipi8Lb+GAw0yPmKZeOi1VojzyRbAyDkvGNWGm8c+E8F2fV8SSpfSMEsZMMWdqu0yQuToAGU4sPfN+iHDsqsua+GAspeO+7LT1Z1szgTcmRMHyXMk68Vaytt1LTFpAFJz8P55Q8dLLtG+53nyfmtMTwW8ZaEUKr3k65NAJ75IzXMnq67EFGK5z1+TNKjvOUkUVHg1JGYC7rTJaMD9oc+QXx7UgWYv6EPIreiuGAs470h5/0zk3yK/D0Kapuo+dOY7QEfJvtrzuQjs1JOPOSm2pgAwPIH8kU=
   on:
     tags: true
